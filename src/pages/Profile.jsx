@@ -11,7 +11,7 @@ function Profile({ pokemonData }) {
 
     useEffect(() => {
         if (!pokemonData) {
-            navigate("/");
+            navigate("/pokedex");
         }
     }, []);
 
@@ -26,9 +26,11 @@ function Profile({ pokemonData }) {
                 <Paper elevation="2" >
                     <Box display="flex" flexDirection="column" alignItems="center" p={5} >
                         <Typography variant="h4">{name}</Typography>
-                        <Box display="flex" alignItems="center" width="80%" margin={2} sx={{flexDirection:{
-                            xs:"column", md:"row"
-                        }}}>
+                        <Box display="flex" alignItems="center" width="80%" margin={2} sx={{
+                            flexDirection: {
+                                xs: "column", md: "row"
+                            }
+                        }}>
                             <Box component="img" src={sprites.front_default} width="50%" height="100%" />
                             <PokemonTable pokemonData={pokemonData} />
                         </Box>
