@@ -11,7 +11,7 @@ function Profile({ pokemonData }) {
 
     useEffect(() => {
         if (!pokemonData) {
-            navigate("/pokedex");
+            navigate("/pokemon");
         }
     }, []);
 

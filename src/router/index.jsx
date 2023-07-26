@@ -9,7 +9,7 @@ function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/pokedex" element={<Home setPokemonData={setPokemonData} />} />
+                <Route path="/pokemon" element={<Home setPokemonData={setPokemonData} />} />
                 <Route path="/profile" element={<Profile pokemonData={pokemonData} />} />
             </Routes>
         </BrowserRouter>

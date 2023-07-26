@@ -58,7 +58,7 @@ export default function NavBar({ pokemonFilter, hideSearch }) {
             <AppBar position="static">
                 <Toolbar>
                     <Box display="flex" justifyContent="space-between" width="100%">
-                        <Box component="img" src="/public/assets/pokemon-logo.png" alt='logo pokemon' height="3em" sx={{ cursor: "pointer" }} onClick={() => navigate("/pokedex")} />
+                        <Box component="img" src="/public/assets/pokemon-logo.png" alt='logo pokemon' height="3em" sx={{ cursor: "pointer" }} onClick={() => navigate("/pokemon")} />
                         {!hideSearch ? (
                             <Search onChange={(e) => pokemonFilter(e.target.value)}>
                                 <SearchIconWrapper>
